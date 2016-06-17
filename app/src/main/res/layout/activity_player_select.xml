@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:weightSum="1"
+    android:id="@+id/pselect">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/playerprompt"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:id="@+id/upperScreen"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:id="@+id/leftarrow"
+                android:background="@drawable/leftarrow"
+                android:adjustViewBounds="false"
+                android:layout_gravity="bottom"
+                android:layout_weight="0"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/playersNum"
+                android:layout_weight="1"
+                android:textSize="80dp"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:id="@+id/rightarrow"
+                android:layout_weight="0"
+                android:background="@drawable/rightarrow"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="bottom|right"
+                android:paddingLeft="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="63dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tomatoNum"
+                android:src="@drawable/twoplayer" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerVertical="true"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/startButton"
+            android:background="@drawable/start_prompt"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_toEndOf="@+id/linearLayout" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exitButton"
+            android:background="@drawable/nvm_prompt" />
+    </LinearLayout>
+
+</LinearLayout>
